@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/f01941449c.js" crossorigin="anonymous"></script>
     <title>ListGo platform</title>
   </head>
   <body>
@@ -31,6 +32,415 @@
         </div>
       </div>
     </nav>
-    <div class="hero-container"></div>
+    <section class="hero">
+        <div class="hero-title">
+            <h1>Easy way to find a perfect property</h1>
+        </div>
+        <div class="hero-text">
+            <p>We provide a complete service for the sale, purchase or rental of real estate.</p>
+        </div>
+        <div class="search">
+            <div class="serv-type">
+                <ul>
+                    <li class="serv-item"><button type="button">Rent</button></li>
+                    <li class="serv-item"><button type="button">Buy</button></li>
+                    <li class="serv-item"><button type="button">Sell</button></li>
+                </ul>
+            </div>
+            <div class="hero-inputs">
+                <div class="inp-card">
+                    <label class="inp-lebels" for="location" >Location</label>     
+                    <div class="inp-row">
+                        <select id="location" name="location" class="form-control">
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Åland Islands">Åland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Bouvet Island">Bouvet Island</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                            <option value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                        </select>
+                        <div class="inp-icon">
+                            <span><i class="fa-solid fa-location-crosshairs"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp-card">
+                    <label class="inp-lebels" for="propertyType">Property Type</label>     
+                    <div class="inp-row">
+                        <select id="propertyType" name="propertyType" class="form-control">
+                            <option value="" disabled selected>Select property type</option>
+                            <option value="single-family-home">Single-Family Home</option>
+                            <option value="condominium">Condominium (Condo)</option>
+                            <option value="townhouse">Townhouse</option>
+                            <option value="multi-family-home">Multi-Family Home</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="cooperative">Cooperative (Co-op)</option>
+                            <option value="loft">Loft</option>
+                            <option value="villa">Villa</option>
+                            <option value="cottage">Cottage</option>
+                        </select>
+                        <div class="inp-icon">
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="inp-card">
+                    <label for="priceRange" class="inp-lebels">Property Type</label>     
+                    <div class="inp-row">
+                        <select id="priceRange" name="priceRange" class="form-control">
+                            <option value="" disabled selected>Select price range</option>
+                            <option value="under-50k">Under $50,000</option>
+                            <option value="50k-100k">$50,000 - $100,000</option>
+                            <option value="100k-200k">$100,000 - $200,000</option>
+                            <option value="200k-300k">$200,000 - $300,000</option>
+                            <option value="300k-400k">$300,000 - $400,000</option>
+                            <option value="400k-500k">$400,000 - $500,000</option>
+                            <option value="500k-700k">$500,000 - $700,000</option>
+                            <option value="700k-1M">$700,000 - $1,000,000</option>
+                            <option value="over-1M">Over $1,000,000</option>
+                        </select>
+                        
+                        <div class="inp-icon">
+                            <span><i class="fa-solid fa-tag"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="inp-submit">
+                    <button type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="our-location">
+        <div class="loc-content">
+
+            <div class="loc-heading">
+                <h1>We are available in many well known countries</h1>
+            </div>
+            <div class="loc-cards">
+                <div class="loc-card">
+                    <div class="card-img">
+                        <img src="./assets/images/countries/card-1.webp" alt="America">
+                    </div>
+                    <div class="card-title">
+                        <h3>America</h3>
+                    </div>
+                </div>
+                <div class="loc-card">
+                    <div class="card-img">
+                        <img src="./assets/images/countries/card-2.jpg" alt="Spain">
+                    </div>
+                    <div class="card-title">
+                        <h3>Spain</h3>
+                    </div>
+                </div>
+                <div class="loc-card">
+                    <div class="card-img">
+                        <img src="./assets/images/countries/card-3.webp" alt="London">
+                    </div>
+                    <div class="card-title">
+                        <h3>London</h3>
+                    </div>
+                </div>
+                <div class="loc-card">
+                    <div class="card-img">
+                        <img src="./assets/images/countries/card-4.webp" alt="France">
+                    </div>
+                    <div class="card-title">
+                        <h3>France</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recently-added">
+        <div class="recent-content">
+            <div class="recent-heading">
+                <div class="recent-left">
+                    <h1>Recently added</h1>
+                </div>
+                <div class="recent-right">
+                    <a href="#" target="_blank" rel="noopener noreferrer">See all</a>
+                </div>
+            </div>
+            <div class="recent-cards">
+                <div class="recent-card">
+                    <div class="recent-pic">
+                        <img src="./assets/images/recent/r-1.webp" alt="pic">
+                    </div>
+                    <div class="recent-details">
+                        <div class="recent-title"><h3>103/143 West Street,Crows Nest</h3></div>
+                        <div class="recent-features">
+                            <ul class="feature-list">
+                                <li class="feat-item">
+                                    10 Bedroom
+                                </li>
+                                <li class="feat-item">
+                                    150M
+                                </li>
+                                <li class="feat-item">
+                                    2 Garage
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recent-bottom">
+                            <div class="recent-poster">
+                                <h4>Posted by X Builder</h4>
+                            </div>
+                            <div class="recent-price">
+                                <span>45,567$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-card">
+                    <div class="recent-pic">
+                        <img src="./assets/images/recent/r-2.webp" alt="pic">
+                    </div>
+                    <div class="recent-details">
+                        <div class="recent-title"><h3>103/143 West Street,Crows Nest</h3></div>
+                        <div class="recent-features">
+                            <ul class="feature-list">
+                                <li class="feat-item">
+                                    10 Bedroom
+                                </li>
+                                <li class="feat-item">
+                                    150M
+                                </li>
+                                <li class="feat-item">
+                                    2 Garage
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recent-bottom">
+                            <div class="recent-poster">
+                                <h4>Posted by X Builder</h4>
+                            </div>
+                            <div class="recent-price">
+                                <span>45,567$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-card">
+                    <div class="recent-pic">
+                        <img src="./assets/images/recent/r-3.webp" alt="pic">
+                    </div>
+                    <div class="recent-details">
+                        <div class="recent-title"><h3>103/143 West Street,Crows Nest</h3></div>
+                        <div class="recent-features">
+                            <ul class="feature-list">
+                                <li class="feat-item">
+                                    10 Bedroom
+                                </li>
+                                <li class="feat-item">
+                                    150M
+                                </li>
+                                <li class="feat-item">
+                                    2 Garage
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recent-bottom">
+                            <div class="recent-poster">
+                                <h4>Posted by X Builder</h4>
+                            </div>
+                            <div class="recent-price">
+                                <span>45,567$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-card">
+                    <div class="recent-pic">
+                        <img src="./assets/images/recent/r-4.webp" alt="pic">
+                    </div>
+                    <div class="recent-details">
+                        <div class="recent-title"><h3>103/143 West Street,Crows Nest</h3></div>
+                        <div class="recent-features">
+                            <ul class="feature-list">
+                                <li class="feat-item">
+                                    10 Bedroom
+                                </li>
+                                <li class="feat-item">
+                                    150M
+                                </li>
+                                <li class="feat-item">
+                                    2 Garage
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recent-bottom">
+                            <div class="recent-poster">
+                                <h4>Posted by X Builder</h4>
+                            </div>
+                            <div class="recent-price">
+                                <span>45,567$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-card">
+                    <div class="recent-pic">
+                        <img src="./assets/images/recent/r-5.webp" alt="pic">
+                    </div>
+                    <div class="recent-details">
+                        <div class="recent-title"><h3>103/143 West Street,Crows Nest</h3></div>
+                        <div class="recent-features">
+                            <ul class="feature-list">
+                                <li class="feat-item">
+                                    10 Bedroom
+                                </li>
+                                <li class="feat-item">
+                                    150M
+                                </li>
+                                <li class="feat-item">
+                                    2 Garage
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recent-bottom">
+                            <div class="recent-poster">
+                                <h4>Posted by X Builder</h4>
+                            </div>
+                            <div class="recent-price">
+                                <span>45,567$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-card">
+                    <div class="recent-pic">
+                        <img src="./assets/images/recent/r-6.webp" alt="pic">
+                    </div>
+                    <div class="recent-details">
+                        <div class="recent-title"><h3>103/143 West Street,Crows Nest</h3></div>
+                        <div class="recent-features">
+                            <ul class="feature-list">
+                                <li class="feat-item">
+                                    10 Bedroom
+                                </li>
+                                <li class="feat-item">
+                                    150M
+                                </li>
+                                <li class="feat-item">
+                                    2 Garage
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recent-bottom">
+                            <div class="recent-poster">
+                                <h4>Posted by X Builder</h4>
+                            </div>
+                            <div class="recent-price">
+                                <span>45,567$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact_us">
+        <div class="contact-title">
+            <h1>Find your best Real Estate</h1>
+        </div>
+        <div class="contact-text">
+            <p>We provide a complete service for the sale, purchase or rental of real estate.</p>
+        </div>
+        <div class="contact-btn">
+            <a href="#" target="_blank" rel="noopener noreferrer">Contact us</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left-part">
+                <div class="logo">
+                    <h1>List<span style="color: rgb(36, 178, 234)">Go</span></h1>
+                  </div>
+                <div class="footer-bio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="footer-social">
+                    <ul class="social-links">
+                        <li class="item">
+                            <i class="fa-brands fa-facebook"></i>
+                        </li>
+                        <li class="item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
+                        <li class="item">
+                            <i class="fa-brands fa-instagram"></i>
+                        </li>
+                        <li class="item">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024. All right reserved.</p>
+                </div>
+            </div>
+            <div class="footer-right-part">
+                <div class="footer-heading">
+                    <h3>Our company</h3>
+                    <div class="footer-links">
+    
+                        <ul class="page-links">
+                            <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>About Us</li>
+                            <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>Blog</li>
+                            <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>Partners</li>
+                            <li><a href="http://" target="_blank" rel="noopener noreferrer"></a>Contact us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-heading">
+                    <h3>Subscribe</h3>
+                    <p>Subscribe to get latest property, blog news from us</p>
+                    <div class="subscribe">
+                        <input type="email" name="subscribe" id="subscribe" placeholder="Enter your email">
+                        <div class="send-email">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
