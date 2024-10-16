@@ -9,6 +9,10 @@
     font-weight: 500;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     background-color: var(--white);
     padding: 0 5%;
@@ -16,15 +20,28 @@ body {
 
 nav {
     width: 100%;
-    height: 100px;
+    height: 10rem;
+    position: sticky;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 3%;
+    background-color: var(--white);
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h1 {
+    margin-left: 1rem;
 }
 
 .logo h1, span{
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 .right-part {
@@ -34,18 +51,18 @@ nav {
 .links {
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 3rem;
 }
 .links li {
     list-style-type: none;
-    margin: 0 20px;
+    margin: 0  2rem;
 }
 .links li a {
     position: relative;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6em;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 1rem;
     color: var(--navy);
     font-weight: 500;
 }
@@ -53,8 +70,8 @@ nav {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
-    bottom: 2px;
+    height:0.2rem;
+    bottom:0.2rem;
     left: 0;
     transform: scaleX(0);
     transition: transform .4s ease;
@@ -71,20 +88,23 @@ nav {
 }
 .login button {
     width: 120px;
-    height: 40px;
-    border: 2px solid var(--blue);
-    border-radius: 10px;
-    font-size: 16px;
+    height:  4rem;
+    border:0.2rem solid var(--blue);
+    border-radius: 1rem;
+    font-size:  1.6rem;
     background-color: transparent;
+    color: var(--blue);
+    cursor: pointer;
 }
-
+.login button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
 /* Hero section */
 
 .hero {
     width: 100%;
-    /* height: 80vh; */
-    /* background-color: var(--navy); */
-    border-radius: 40px;
+    border-radius:  4rem;
     overflow: hidden;
     background: url("../images/banners/home-banner.webp");
     background-position: center;
@@ -96,20 +116,20 @@ nav {
 }
 .hero .hero-title {
     width: 50%;
-    padding-bottom: 40px;
+    padding-bottom:  4rem;
     font-weight: 900;
 }
 .hero .hero-title h1 {
-    font-size: 2.8em;
+    font-size: 5rem;
     line-height: 1.2;
     font-weight: 600;
 }
 .hero .hero-text {
     width: 40%;
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
 }
 .hero .hero-text p {
-    font-size: 1em;
+    font-size: 1.8rem;
     line-height: 1.4;
     font-weight: 600;
     color: var(--light-navy);
@@ -131,12 +151,13 @@ nav {
     list-style-type: none;
 }
 .search .serv-type ul li button {
-    width: 80px;
-    height: 40px;
+    width: 8rem;
+    height: 4rem;
+    font-size: 1.4rem;
     border: none;
     outline: none;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
     background-color: transparent;
     cursor: pointer;
 }
@@ -148,26 +169,26 @@ nav {
 /* Hero inputes  */
 
 .hero-inputs {
-    padding: 25px 0;
+    padding: 2.5rem 0;
     display: flex;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
     background-color: rgba(255, 255, 255, 0.501);
     backdrop-filter: blur(7px);
 }
 .inp-card {
-    padding: 0 25px;
-    border-right: 1px solid var(--line);
+    padding: 0 2.5rem;
+    border-right: 0.1rem solid var(--line);
 }
 .inp-card:first-child {
-    padding: 0 25px 0 12px;
+    padding: 0 2.5rem 0 1.2rem;
 }
 .inp-lebels {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--navy);
-    padding-left: 12px;
+    padding-left: 1.2rem;
 }
 .inp-row {
     display: flex;
@@ -175,7 +196,7 @@ nav {
 }
 .form-control {
     width: max-content;
-    margin-right: 30px;
+    margin-right: 3rem;
     border: none;
     color: var(--light-navy);
     outline: none;
@@ -185,29 +206,29 @@ nav {
 
 
 select.form-control option {
-    padding: 10px;
+    padding: 1rem;
     background-color: var(--line);  
     color: var(--navy);    
-    font-size: 16px;
+    font-size:  1.6rem;
 }
 
 .inp-icon i{
     color: var(--light-navy);
-    font-size: .9em;
+    font-size: 1.7rem;
 }
 .inp-submit {
-    padding: 0 25px;
+    padding: 0 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .inp-submit button {
-    width: 60px;
-    height: 60px;
+    width:  6rem;
+    height:  6rem;
     background-color: var(--blue);
     border: none;
     outline: none;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     cursor: pointer;
 }
 .inp-submit button:hover {
@@ -227,7 +248,7 @@ select.form-control option {
 .loc-content {
     width: 94%;
     margin: 0 auto;
-    padding: 110px 0 80px;
+    padding: 11rem 0 8rem;
 }
 
 .loc-heading{
@@ -235,27 +256,27 @@ select.form-control option {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom:  4rem;
 }
 .loc-heading h1{
     width: 40%;
     text-align: center;
-    font-size: 38px;
+    font-size:  3.8rem;
     font-weight: 600;
 }
 .loc-cards {
-    height: 450px;
+    height: 45rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    gap: 3rem;
 }
 .loc-card {
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 3rem;
     position: relative;
     transition: transform .4s ease;
     cursor: pointer;
-    box-shadow: 0 0 10px 5px #0000001b;
+    box-shadow: 0 0 1rem 0.5rem #0000001b;
 }
 .loc-card:hover {
     transform: scale(1.02);
@@ -279,13 +300,13 @@ select.form-control option {
 
 .card-title {
     position: absolute;
-    top: 30px;
+    top: 3rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
 }
 .card-title h3 {
-    font-size: 20px;
+    font-size:  2rem;
     color: var(--white);
     font-weight: 600;
 }
@@ -294,7 +315,7 @@ select.form-control option {
 
 .recently-added {
     width: 100%;
-    padding: 30px 0 100px;
+    padding: 3rem 0 10rem;
 }
 .recent-content {
     width: 94%;
@@ -305,11 +326,11 @@ select.form-control option {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-bottom:  4rem;
 }
 .recent-heading h1 {
     text-align: center;
-    font-size: 38px;
+    font-size:  3.8rem;
     font-weight: 600;
 }
 .recent-heading a {
@@ -325,31 +346,31 @@ select.form-control option {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
-    gap: 30px;
+    gap: 3rem;
 }
 .recent-card {
     width: 100%;
     overflow: hidden;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 0 5px 5px #3d3c3c0d;
+    padding:  2rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 0.5rem 0.5rem #3d3c3c0d;
     display: flex;
-    border: 2px solid var(--line);
+    border:0.2rem solid var(--line);
     cursor: pointer;
     transition: transform .4s ease;
 }
 .recent-card:hover {
-    box-shadow: 0 0 5px 5px #3d3c3c13;
-    border: 1px solid var(--blue);
+    box-shadow: 0 0 0.5rem 0.5rem #3d3c3c13;
+    border: 0.1rem solid var(--blue);
     transform: scale(1.01);
 
 }
 .recent-pic {
-    width: 160px;
-    height: 140px;
-    border-radius: 20px;
+    width: 16rem;
+    height: 14rem;
+    border-radius:  2rem;
     overflow: hidden;
-    margin-right: 20px;
+    margin-right:  2rem;
 }
 .recent-pic img{
     width: 100%;
@@ -357,15 +378,15 @@ select.form-control option {
     object-fit: cover;
 }
 .recent-title {
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 .recent-title h3 {
-    font-size: 17px;
+    font-size: 1.7rem;
     color: var(--navy);
     font-weight: 700;
 }
 .recent-features {
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
 }
 .recent-features ul {
     width: 100%;
@@ -375,12 +396,12 @@ select.form-control option {
 }
 .recent-features ul li {
     list-style-type: none;
-    font-size: 0.8rem; 
+    font-size: 1.3rem; 
     color: var(--light-navy);
 }
 .recent-features ul li:nth-child(2) {
     color: var(--dark-blue);
-    padding: 0 5px;
+    padding: 0 0.5rem;
 }
 .recent-features ul {
     width: 100%;
@@ -396,19 +417,19 @@ select.form-control option {
     justify-content: space-between;
 }
 .recent-poster h4 {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     color: var(--light-navy);
 }
 
 .recent-price {
     background-color: var(--flannel);
-    padding: 5px 8px;
-    border-radius: 7px;
-    font-size: 14px;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.7rem;
+    font-size: 1.4rem;
     color: var(--white);
 }
 .recent-price span {
-    font-size: 13px;
+    font-size: 1.3rem;
     color: var(--navy);
     font-weight: 600;
 }
@@ -417,20 +438,19 @@ select.form-control option {
 
 .contact_us {
     width: 100%;
-    height: 60vh;
-    border-radius: 40px;
+    border-radius:  4rem;
     overflow: hidden;
     background: url("../images/banners/contact-banner.jpg");
     background-position: center;
     background-size: cover;
     background-position: calc(100%);
     background-repeat: no-repeat;
-    padding: 80px 5%;
+    padding: 80px 5% 100px;
     display: flex;
     flex-direction: column;
     background-color: #C3DFED;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom:  6rem;
 }
 .contact_us:after {
     content: "";
@@ -443,16 +463,16 @@ select.form-control option {
 }
 .contact-title {
     width: 35%;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
     color: var(--navy);
 }
 .contact-text {
     width: 35%;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 600;
-    padding-bottom: 60px;
+    padding-bottom:  6rem;
     color: var(--light-navy);
 }
 .contact-btn {
@@ -461,11 +481,12 @@ select.form-control option {
 }
 .contact-btn a {
     text-decoration: none;
-    padding: 15px 35px;
+    padding: 1.5rem 5rem;
     background-color: var(--blue);
-    border-radius: 15px;
+    border-radius: 1.5rem;
     color: var(--white);
     cursor: pointer;
+    font-size: 1.6rem;
 }
 .contact-btn a:hover {
     background-color: var(--dark-blue);
@@ -473,7 +494,7 @@ select.form-control option {
 
 .footer-content {
     width: 100%;
-    padding: 50px 0 60px;
+    padding: 5rem 0  6rem;
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -484,8 +505,11 @@ select.form-control option {
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    gap: 25px;
+    gap: 2.5rem;
     color: var(--navy);
+}
+.footer-bio {
+    font-size: 1.5rem;
 }
 .social-links {
     display: flex;
@@ -495,7 +519,7 @@ select.form-control option {
     margin: 7px;
 }
 .social-links li i {
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 .social-links li:nth-child(1) i {
     color: #1877F2;
@@ -513,55 +537,232 @@ select.form-control option {
     display: flex;
     align-items: start;
     justify-content: space-between;
-    gap: 60px;
+    gap:  6rem;
 }
 .footer-heading h3 {
-padding-bottom: 25px;
+padding-bottom: 2.5rem;
 color: var(--blue);
-font-size: 20px;
+font-size:  2rem;
+}
+.copyright {
+    font-size: 1.5rem;
 }
 .page-links li {
     list-style-type: none;
-    line-height: 3;
-    font-size: 18px;
+    margin-bottom:1.5rem;
+}
+.page-links li a {
+    list-style-type: none;
+    font-size: 1.8rem;
     font-weight: 500;
+    color: var(--navy);
+    text-decoration: none;
+    position: relative;
+}
+.page-links li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:0.2rem;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .4s ease;
+    transform-origin: right;
+    background-color: var(--blue);
+}
+
+.page-links li a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.page-links li a:hover {
+    color: var(--blue);
 }
 .footer-heading p {
     width: 70%;
     color: var(--navy);
-    padding-bottom: 25px;
+    padding-bottom: 2.5rem;
 }
 
 .subscribe {
     width: 100%;
-    border-radius: 15px;
-    border: 2px solid var(--flannel);
+    border-radius: 1.5rem;
+    border:0.2rem solid var(--flannel);
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    padding: 5px 0;
+    padding: 0.5rem 0;
 }
-
+.footer-right-part p {
+    
+    font-size: 1.5rem;
+}
 .subscribe input {
-    width: calc(100% - 50px);
-    height: 50px;
-    border-radius: 15px;
+    width: calc(100% - 5rem);
+    height: 5rem;
+    border-radius: 1.5rem;
     border: none;
     outline: none;
-    padding-left: 12px;
+    padding-left: 1.2rem;
 }
-
 .send-email {
-    width: 40px;
-    height: 40px;
+    width:  4rem;
+    height:  4rem;
     background-color: var(--blue);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 1rem;
+    cursor: pointer;
 }
 .send-email i {
     color: var(--white);
+}
+
+
+/* Properties page style */
+
+.properties-hero {
+    width: 100%;
+    background: url('../images/banners/properties-banner.png');
+    background-position: calc(100%);
+    background-size: cover;
+    padding: 26rem 0;
+    border-radius: 4rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 6rem;
+}
+.properties-hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000b6, transparent);
+}
+.pro-hero-title {
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pro-hero-title h1 {
+    font-size: 8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+    line-height: 1.1;
+}
+.redirect {
+    width: 6rem;
+    height: 6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+   animation: redirect 2s ease-in-out infinite;
+}
+@keyframes redirect {
+    from {
+        bottom: 4.5rem;
+    }
+    to {
+        bottom: 3.5rem;
+    }
+}
+.redirect i {
+    font-size: 2.6rem;
+    color: var(--navy);
+}
+
+/* Properties cards  */
+
+.properties-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 4rem;
+    padding-top: 30px;
+    margin-bottom: 10rem;
+}
+
+.property-card {
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 0 20px 2px #00000018;
+    border-radius: 1rem;
+    padding: 1.8rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+.property-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px 2px #00000029;
+}
+.property-image {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.property-image img{
+    width: 100%;
+    object-fit: cover;
+}
+.property-header {
+    padding: 1rem 0;
+}
+.property-header h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--navy);
+    border: none;
+    outline: none;
+}
+.property-header .property-price{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--blue);
+}
+.property-desc p {
+    font-size: 1.4rem;
+    color: var(--navy);
+}
+.property-features {
+    padding-top: 2rem;
+    
+}
+.property-features ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.property-features ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--navy);
+}
+.property-features ul li span {
+    font-size: 1.5rem;
+    color: #454545;
+}
+.property-features ul li .prop-icon {
+    padding-right: 0.4rem;
+}
+.property-features ul li .prop-icon i {
+    color: #454545;
 }
