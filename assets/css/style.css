@@ -11,11 +11,12 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--white);
-  padding: 0 5%;
+  /* padding: 0 5%; */
 }
 
 nav {
@@ -102,7 +103,9 @@ span {
   color: var(--white);
 }
 /* Hero section */
-
+.main-content {
+    padding: 0 3%;
+}
 .hero {
   width: 100%;
   border-radius: 4rem;
@@ -493,7 +496,7 @@ select.form-control option {
 
 .footer-content {
   width: 100%;
-  padding: 5rem 0 6rem;
+  padding: 5rem 3% 6rem;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -599,7 +602,7 @@ select.form-control option {
 }
 .subscribe input {
   width: calc(100% - 5rem);
-  height: 5rem;
+  height: 4rem;
   border-radius: 1.5rem;
   border: none;
   outline: none;
@@ -617,6 +620,7 @@ select.form-control option {
   cursor: pointer;
 }
 .send-email i {
+    font-size: 1.6rem;
   color: var(--white);
 }
 
@@ -641,7 +645,7 @@ select.form-control option {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #000000b6, transparent);
+  background: linear-gradient(to bottom, #000000c3, transparent);
 }
 .pro-hero-title {
   position: absolute;
@@ -669,6 +673,7 @@ select.form-control option {
   bottom: 4rem;
   left: 4rem;
   animation: redirect 2s ease-in-out infinite;
+  cursor: pointer;
 }
 @keyframes redirect {
   from {
@@ -686,7 +691,8 @@ select.form-control option {
 /* Properties cards  */
 
 .properties-cards {
-  width: 100%;
+  width: 98%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 4rem;
@@ -702,11 +708,6 @@ select.form-control option {
   padding: 1.8rem;
   padding-bottom: 2rem;
   cursor: pointer;
-  transition: transform 0.4s ease;
-}
-.property-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 20px 2px #00000029;
 }
 .property-image {
   width: 100%;
@@ -834,8 +835,367 @@ select.form-control option {
 
 /* blog page style */
 
+.blog-hero {
+  width: 100%;
+  background: url("../images/banners/contact-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 26rem 0;
+  border-radius: 4rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 6rem;
+  background-color: #cadbf3;
+}
+.blog-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #48969f23, transparent);
+}
+
 .blog-hero-title {
+  width: 60%;
   font-size: 4rem;
   color: var(--white);
   line-height: 1.2;
+  position: absolute;
+  top: 8rem;
+  left: 5rem;
+  color: var(--navy);
+}
+
+/* blog articles */
+
+.blog-main {
+  width: 98%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+  margin-bottom: 10rem;
+}
+.blog-articles {
+  grid-column: span 9 / span 9;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 3rem;
+}
+.blog-art-card {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 1.2rem 0.2rem #00000008;
+  background-color: #edededa1;
+  cursor: pointer;
+}
+.blog-art-card figure {
+  width: 100%;
+  height: 25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.blog-art-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-art-title {
+  margin-bottom: 2rem;
+}
+.blog-art-title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.blog-art-desc {
+  margin-bottom: 2rem;
+}
+.blog-art-desc {
+  font-size: 1.5rem;
+  color: var(--navy);
+}
+
+.blog-art-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.blog-art-bt {
+  padding: 0.8rem 2rem;
+  border: 0.2rem solid #d9d9d9;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+.blog-art-bt span {
+  color: var(--light-navy);
+  font-size: 1.5rem;
+}
+
+.blog-categories {
+  width: 100%;
+  height: max-content;
+  position: sticky;
+  top: 10rem;
+  grid-column: span 3 / span 3;
+  background-color: #f0f2f6;
+  border-radius: 0.5rem;
+}
+
+.cat-heading {
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+}
+.cat-heading h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.cat-items {
+  padding: 3rem;
+}
+
+.cat-list li {
+  line-height: 2.7;
+  color: var(--navy);
+  font-size: 1.3rem;
+}
+.cat-list li span {
+  color: var(--navy);
+  font-size: 1.7rem;
+}
+.cat-list li i {
+  font-size: 1.7rem;
+  padding-right: 1rem;
+}
+
+/* this is contact page style */
+
+.contact-section {
+  width: 100%;
+  background-color: var(--blue);
+  border-radius: 4rem;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+.contact-title-p {
+  width: 90%;
+  padding-bottom: 4rem;
+}
+.contact-title-p h1 {
+  font-size: 4rem;
+  line-height: 1.3;
+  color: var(--white);
+}
+
+.contact-info {
+  padding-bottom: 4rem;
+}
+
+.contact-info ul li {
+  line-height: 2;
+  color: var(--white);
+}
+.contact-info ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.contact-info ul li a:hover {
+  color: var(--navy);
+}
+.contact-info ul li a span {
+  font-size: 1.9rem;
+}
+.contact-info ul li a span:first-child {
+  margin-right: 10px;
+}
+
+.contact-social ul {
+  display: flex;
+}
+.contact-social ul li {
+  margin-right: 15px;
+}
+.contact-social ul li a i {
+  color: var(--white);
+  font-size: 2.6rem;
+}
+.contact-social ul li a i:hover {
+  color: var(--navy);
+}
+
+.contact-inputs {
+  width: 100%;
+  padding: 3rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+.inpt-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.inpt-title h2 {
+  font-size: 3rem;
+  color: var(--blue);
+  font-weight: 500;
+}
+.contact-inp-cards form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-inp-cards form input {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  background-color: #dff0f7;
+  border: none;
+  outline: none;
+  padding-left: 2rem;
+}
+.contact-inp-cards form textarea {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 1.5rem;
+  background-color: #dff0f7;
+  border: none;
+  padding: 2rem;
+  padding-top: 1.5rem;
+  outline: none;
+  resize: none;
+}
+.contact-inp-cards form button {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.contact-inp-cards form button:hover {
+  background-color: var(--dark-blue);
+}
+
+/* Log in page */
+
+.log-in-page {
+  width: 100%;
+  height: 100svh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+}
+.login-picture {
+    padding: 20rem 0;
+  width: 100%;
+  background: url("../images/banners/signin-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: var(--blue);
+
+}
+.login-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login-form-c {
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0 0 1.2rem 0.2rem #0000001c;
+  padding: 4rem;
+  border-radius: 1.5rem;
+}
+
+.login-title {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.login-title h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.login-form-c form {
+  display: flex;
+  flex-direction: column;
+}
+.login-form-c form input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  background-color: #dff0f7;
+  border: none;
+  outline: none;
+  padding-left: 2rem;
+}
+.login-remeber {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.login-remeber input {
+  margin-right: 0.7rem;
+}
+.login-form-c form button {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.login-form-c form button:hover {
+  background-color: var(--dark-blue);
+}
+.sign-up {
+    font-size: 1.2rem;
+}
+.sign-up span{
+    font-size: 1.4rem;
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+
+.log-rev {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.log-rev i {
+   font-size: 2rem;
+   color: var(--navy);
+   padding: 2rem;
 }
