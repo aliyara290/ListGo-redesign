@@ -1,4 +1,3 @@
-@import url("./font.css");
 @import url("./variables.css");
 
 * {
@@ -36,6 +35,9 @@ nav {
 .logo {
   display: flex;
   align-items: center;
+}
+.logo img {
+  padding-right: 1rem;
 }
 .logo h1 {
   margin-left: 1rem;
@@ -459,7 +461,7 @@ select.form-control option {
   width: 100%;
   border-radius: 4rem;
   overflow: hidden;
-  background: url("../images/banners/contact-banner.jpg");
+  background: url("../images/banners/contact-banner.webp");
   background-position: center;
   background-size: cover;
   background-position: calc(100%);
@@ -558,7 +560,7 @@ select.form-control option {
   justify-content: space-between;
   gap: 6rem;
 }
-.footer-heading h3 {
+.footer-heading h1 {
   padding-bottom: 2.5rem;
   color: var(--blue);
   font-size: 2rem;
@@ -645,7 +647,7 @@ select.form-control option {
 
 .properties-hero {
   width: 100%;
-  background: url("../images/banners/properties-banner.png");
+  background: url("../images/banners/properties-banner.webp");
   background-position: calc(100%);
   background-size: cover;
   padding: 26rem 0;
@@ -841,7 +843,7 @@ select.form-control option {
   margin-bottom: 2rem;
 }
 
-.w-card-title h3 {
+.w-card-title h2 {
   font-size: 2.2rem;
   font-weight: 500;
   color: var(--blue);
@@ -854,7 +856,7 @@ select.form-control option {
 
 .blog-hero {
   width: 100%;
-  background: url("../images/banners/contact-banner.jpg");
+  background: url("../images/banners/contact-banner.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1127,7 +1129,7 @@ select.form-control option {
 .login-picture {
     padding: 20rem 0;
   width: 100%;
-  background: url("../images/banners/signin-banner.jpg");
+  background: url("../images/banners/signin-banner.webp");
   background-position: center;
   background-size: cover;
   background-color: var(--blue);
