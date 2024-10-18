@@ -45,6 +45,11 @@ nav {
 span {
   font-size: 2.2rem;
   font-weight: 600;
+  
+}
+.logo span {
+  color: var(--blue);
+
 }
 .right-part {
   display: flex;
@@ -320,7 +325,7 @@ select.form-control option {
   transform: translateX(-50%);
   z-index: 10;
 }
-.card-title h3 {
+.card-title h2 {
   font-size: 2rem;
   color: var(--white);
   font-weight: 600;
@@ -394,7 +399,7 @@ select.form-control option {
 .recent-title {
   padding-bottom: 1rem;
 }
-.recent-title h3 {
+.recent-title h2 {
   font-size: 1.7rem;
   color: var(--navy);
   font-weight: 700;
@@ -430,7 +435,7 @@ select.form-control option {
   align-items: center;
   justify-content: space-between;
 }
-.recent-poster h4 {
+.recent-poster span {
   font-size: 1.3rem;
   color: var(--light-navy);
 }
