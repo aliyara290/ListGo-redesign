@@ -1246,6 +1246,9 @@ input[type="password"] {
     .links li a {
         color: var(--white);
     }
+    .links li a:hover {
+        color: var(--navy);
+    }
     .login button {
         margin-top: 2rem;
         width: 120px;
@@ -1256,6 +1259,10 @@ input[type="password"] {
         background-color: transparent;
         color: var(--white);
         cursor: pointer;
+      }
+      .login button:hover {
+        background-color: var(--navy);
+        color: var(--white);
       }
 }
 
