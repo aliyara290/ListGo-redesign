@@ -1498,7 +1498,9 @@ input[type="password"] {
         border-radius: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
       }
-
+      .login-picture {
+        display: none;
+      }
       /* login */
 
       .log-in-page {
